@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/Clase - DAM.iml" filepath="$PROJECT_DIR$/Clase - DAM.iml" />
       <module fileurl="file://$PROJECT_DIR$/acceso_a_datos/acceso_a_datos.iml" filepath="$PROJECT_DIR$/acceso_a_datos/acceso_a_datos.iml" />
       <module fileurl="file://$PROJECT_DIR$/desarrollo/desarrollo.iml" filepath="$PROJECT_DIR$/desarrollo/desarrollo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/desarrollo/tema_02/ej_01/ej_01.iml" filepath="$PROJECT_DIR$/desarrollo/tema_02/ej_01/ej_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/desarrollo/tema_02/ej_02/ej_02.iml" filepath="$PROJECT_DIR$/desarrollo/tema_02/ej_02/ej_02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/desarrollo/tema_02/tema_02.iml" filepath="$PROJECT_DIR$/desarrollo/tema_02/tema_02.iml" />
     </modules>
   </component>
 </project>
