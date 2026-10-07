@@ -63,7 +63,7 @@ public class EscribirFicherosXML {
         }
 
         Source source = new DOMSource(document);
-        Result result = new StreamResult(new File(path + "ficheroCML.xml"));
+        Result result = new StreamResult(new File(path + "ficheroXML.xml"));
         Transformer transformer = TransformerFactory.newInstance().newTransformer();
 
         transformer.transform(source, result);
