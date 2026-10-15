@@ -14,9 +14,9 @@ public class CoheteEspacial_Royo extends JPanel {
 
         JFrame frame = new JFrame("Cohete Espacial - Roberto Royo");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(800, 800);
+        frame.setSize(1400, 800);
         frame.setLocationRelativeTo(null);
-        this.setPreferredSize(new Dimension(800, 800));
+        this.setPreferredSize(new Dimension(1400, 800));
         frame.setContentPane(this);
         frame.pack();
 
@@ -29,7 +29,7 @@ public class CoheteEspacial_Royo extends JPanel {
 
         // Background
         g.setColor(new Color(0, 0, 75));
-        g.fillRect(0, 0, 800, 800);
+        g.fillRect(0, 0, 1400, 800);
 
         // Estrellas
         g.setColor(Color.YELLOW);
@@ -37,9 +37,9 @@ public class CoheteEspacial_Royo extends JPanel {
 
         // Planeta
         g.setColor(new Color(125, 80, 0));
-        g.fillOval(600, 600, 100, 100);
+        g.fillOval(1200, 600, 100, 100);
         g.setColor(Color.ORANGE);
-        g.drawOval(575, 575, 150, 150);
+        g.drawOval(1175, 575, 150, 150);
 
         // Cohete
         g.setColor(Color.ORANGE);
@@ -80,6 +80,9 @@ public class CoheteEspacial_Royo extends JPanel {
                 3
         );
 
+
+
+        // texto
         g.setColor(Color.WHITE);
         g.drawString("Mision Royo", 370, 15);
     }
@@ -117,7 +120,7 @@ public class CoheteEspacial_Royo extends JPanel {
     public void setStars(Graphics g, int nStars) {
         for (int i = 0; i < nStars; i++) {
             int size = r.nextInt(25)+1;
-            int x = r.nextInt(801 - size);
+            int x = r.nextInt(1401 - size);
             int y = r.nextInt(801 - size);
             g.fillPolygon(getStar(x, y, size, size));
         }
