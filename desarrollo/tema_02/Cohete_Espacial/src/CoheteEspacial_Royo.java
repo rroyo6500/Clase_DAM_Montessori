@@ -43,7 +43,7 @@ public class CoheteEspacial_Royo extends JPanel {
 
         // Cohete
         g.setColor(Color.ORANGE);
-        g.fillPolygon(getFire(300, 600, 200, 150));
+        g.fillPolygon(getFire(300, 600, 200, 200));
         g.setColor(Color.YELLOW);
         g.fillPolygon(getFire(350, 600, 100, 100));
 
@@ -80,52 +80,38 @@ public class CoheteEspacial_Royo extends JPanel {
                 3
         );
 
+        g.setColor(Color.WHITE);
+        g.drawString("Mision Royo", 370, 15);
     }
 
     public Polygon getFire(int x, int y, int width, int height) {
         int[] xPoints = new int[] {
                 x + (width / 8),
                 x,
+                x + (width / 8),
                 x + (width / 16),
-                x + ((width / 16) * 2),
                 x + ((width / 16) * 3),
-                x + ((width / 16) * 4),
-                x + ((width / 16) * 5),
-                x + ((width / 16) * 6),
-                x + ((width / 16) * 7),
-                x + ((width / 16) * 8),
-                x + ((width / 16) * 9),
-                x + ((width / 16) * 10),
-                x + ((width / 16) * 11),
-                x + ((width / 16) * 12),
-                x + ((width / 16) * 13),
-                x + ((width / 16) * 14),
-                x + ((width / 16) * 15),
+                x + (width / 2),
+                x + (width - ((width / 16) * 3)),
+                x + (width - (width / 16)),
+                x + (width - (width / 8)),
                 x + width,
-                x + ((width / 8) * 7)
-        }; //19
+                x + (width - (width / 8))
+        };
         int[] yPoints = new int[] {
                 y,
-                y + (height / 2),
-                y + ((height / 2) + (height / 16)),
-                y + ((height / 2) + (height / 12)),
-                y + ((height / 2) + (height / 10)),
-                y + ((height / 2) + (height / 8)),
-                y + ((height / 2) + (height / 6)),
-                y + ((height / 2) + (height / 4)),
-                y + ((height / 2) + (height / 2)),
+                y + ((height / 8) * 2),
+                y + (height / 8),
+                y + ((height / 8) * 3),
+                y + ((height / 8) * 2),
                 y + height,
-                y + ((height / 2) + (height / 2)),
-                y + ((height / 2) + (height / 4)),
-                y + ((height / 2) + (height / 6)),
-                y + ((height / 2) + (height / 8)),
-                y + ((height / 2) + (height / 10)),
-                y + ((height / 2) + (height / 12)),
-                y + ((height / 2) + (height / 16)),
-                y + (height / 2),
+                y + ((height / 8) * 2),
+                y + ((height / 8) * 3),
+                y + (height / 8),
+                y + ((height / 8) * 2),
                 y
-        }; // 19
-        return new Polygon(xPoints, yPoints, 19);
+        };
+        return new Polygon(xPoints, yPoints, xPoints.length);
     }
 
     public void setStars(Graphics g, int nStars) {

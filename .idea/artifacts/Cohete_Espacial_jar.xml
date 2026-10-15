@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Cohete_Espacial:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Cohete_Espacial_jar</output-path>
+    <root id="archive" name="Cohete_Espacial.jar">
+      <element id="module-output" name="Cohete_Espacial" />
+    </root>
+  </artifact>
+</component>
